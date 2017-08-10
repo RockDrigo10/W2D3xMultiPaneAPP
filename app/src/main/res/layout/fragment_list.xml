@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/boder"
+    tools:context="com.example.admin.multipane.ListFragment">
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/list"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="+ Add New contact"
+            android:textColor="@color/white"
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openDetail"
+            android:src="@drawable/ic_person_add_black_24dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
